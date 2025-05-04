@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online file converter tools - Convert images to PDF, PDF to JPG, compress images, resize photos and more. No registration required.">
+    <title>Zid's Tool - Free Online File Converter | Image to PDF, PDF to JPG, Compressor</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Zid's Tool",
+      "url": "https://zidstool.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zidstool.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Zid's Tool</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#convert">Convert</a></li>
+                    <li><a href="#compress">Compress</a></li>
+                    <li><a href="#organize">Organize</a></li>
+                    <li><a href="#more-tools">More Tools</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#convert">Convert</a></li>
+            <li><a href="#compress">Compress</a></li>
+            <li><a href="#organize">Organize</a></li>
+            <li><a href="#more-tools">More Tools</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Free Online File Converter Tools</h1>
+                <p class="subtitle">Convert, compress, and edit files quickly and securely. No software or login required.</p>
+                <div class="cta-buttons">
+                    <button class="btn primary-btn" id="start-conversion">Start Converting Now</button>
+                    <button class="btn secondary-btn">Explore All Tools</button>
+                </div>
+                <div class="trust-badges">
+                    <span><i class="fas fa-shield-alt"></i> Secure & Private</span>
+                    <span><i class="fas fa-globe"></i> Works on Any Device</span>
+                    <span><i class="fas fa-bolt"></i> Fast Processing</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/conversion-illustration.svg" alt="File conversion illustration" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner (Top) -->
+    <div class="ad-container">
+        <div class="container">
+            <!-- AdSense or other ad code would go here -->
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+    </div>
+
+    <!-- Popular Tools Section -->
+    <section class="popular-tools" id="convert">
+        <div class="container">
+            <h2>Popular Conversion Tools</h2>
+            <p class="section-description">Quickly convert between file formats with our free online tools</p>
+            
+            <div class="tools-grid">
+                <!-- Tool Card 1 -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Image to PDF</h3>
+                    <p>Convert JPG, PNG, or BMP images to PDF documents</p>
+                    <button class="btn tool-btn" data-tool="image-to-pdf">Use Tool</button>
+                </div>
+                
+                <!-- Tool Card 2 -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-image"></i>
+                    </div>
+                    <h3>PDF to JPG</h3>
+                    <p>Extract pages from PDF files as high-quality images</p>
+                    <button class="btn tool-btn" data-tool="pdf-to-jpg">Use Tool</button>
+                </div>
+                
+                <!-- Tool Card 3 -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-compress-alt"></i>
+                    </div>
+                    <h3>Image Compressor</h3>
+                    <p>Reduce image file size with minimal quality loss</p>
+                    <button class="btn tool-btn" data-tool="image-compressor">Use Tool</button>
+                </div>
+                
+                <!-- Tool Card 4 -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                    <h3>Image Resizer</h3>
+                    <p>Resize photos to custom dimensions while maintaining quality</p>
+                    <button class="btn tool-btn" data-tool="image-resizer">Use Tool</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How Our Tools Work</h2>
+            <p class="section-description">Convert files in just a few simple steps</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Upload Your File</h3>
+                        <p>Drag and drop your file or click to browse your device</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Customize Settings</h3>
+                        <p>Adjust options like quality, size, or format (if available)</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Process & Download</h3>
+                        <p>Our tool converts your file instantly - download with one click</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner (Middle) -->
+    <div class="ad-container">
+        <div class="container">
+            <!-- AdSense or other ad code would go here -->
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+    </div>
+
+    <!-- More Tools Section -->
+    <section class="more-tools" id="more-tools">
+        <div class="container">
+            <h2>More Useful Tools</h2>
+            <p class="section-description">Explore our full collection of free online utilities</p>
+            
+            <div class="tools-grid">
+                <!-- Additional tools would be listed here -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-object-group"></i>
+                    </div>
+                    <h3>Merge PDF</h3>
+                    <p>Combine multiple PDF files into a single document</p>
+                    <button class="btn tool-btn" data-tool="merge-pdf">Use Tool</button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Split PDF</h3>
+                    <p>Extract pages from PDF or divide into multiple files</p>
+                    <button class="btn tool-btn" data-tool="split-pdf">Use Tool</button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Protect PDF</h3>
+                    <p>Add password protection to your PDF documents</p>
+                    <button class="btn tool-btn" data-tool="protect-pdf">Use Tool</button>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-word"></i>
+                    </div>
+                    <h3>Word to PDF</h3>
+                    <p>Convert DOC or DOCX documents to PDF format</p>
+                    <button class="btn tool-btn" data-tool="word-to-pdf">Use Tool</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-content">
+                <h2>Why Choose Zid's Tool?</h2>
+                <p>Our platform offers the best online file conversion experience</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Secure Processing</h3>
+                            <p>All files are processed securely with TLS encryption and automatically deleted after 1 hour.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Fast Conversions</h3>
+                            <p>Our optimized servers process files in seconds, no matter the size.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Works Everywhere</h3>
+                            <p>Use our tools on any device - computer, tablet, or smartphone.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>100% Free</h3>
+                            <p>All basic tools are completely free with no hidden charges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-image">
+                <img src="images/features-illustration.svg" alt="Features illustration" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-description">Find answers to common questions about our tools</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I convert an image to PDF?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>To convert an image to PDF, simply upload your JPG, PNG, or other image file using our Image to PDF tool. You can drag and drop the file or click to browse your device. After uploading, click "Convert" and your PDF will be ready to download in seconds.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there a limit to file size?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our free version supports files up to 50MB. For larger files or batch processing, consider upgrading to our Pro version which supports files up to 1GB and offers additional features.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are my files secure?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, all file transfers are encrypted with TLS, and we automatically delete all uploaded files from our servers after 1 hour. No one except you has access to your files during processing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What image formats can I convert to PDF?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our Image to PDF tool supports JPG, PNG, BMP, TIFF, and GIF formats. You can upload multiple images at once to create a multi-page PDF document.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do I need to create an account?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, all our basic tools can be used without registration. However, creating a free account allows you to access your conversion history and save favorite tools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Convert Your Files?</h2>
+            <p>Join millions of users who trust Zid's Tool for their file conversion needs</p>
+            <button class="btn primary-btn">Start Converting Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Zid's Tool</h3>
+                    <p>Free online file conversion tools that work on any device. Fast, secure, and easy to use.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><a href="#">Image to PDF</a></li>
+                        <li><a href="#">PDF to JPG</a></li>
+                        <li><a href="#">Image Compressor</a></li>
+                        <li><a href="#">Image Resizer</a></li>
+                        <li><a href="#">Merge PDF</a></li>
+                        <li><a href="#">Split PDF</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Zid's Tool. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Sitemap</a>
+                    <a href="#">API</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tool Modals -->
+    <div class="modal" id="image-to-pdf-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Image to PDF Converter</h2>
+            <p>Convert JPG, PNG, or other images to PDF documents</p>
+            
+            <div class="converter-container">
+                <div class="upload-area" id="image-to-pdf-upload">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Drag & Drop Your Images Here</h3>
+                    <p>or click to browse files</p>
+                    <input type="file" id="image-to-pdf-input" accept="image/*" multiple>
+                </div>
+                
+                <div class="options-container">
+                    <div class="option">
+                        <label for="pdf-orientation">Page Orientation:</label>
+                        <select id="pdf-orientation">
+                            <option value="portrait">Portrait</option>
+                            <option value="landscape">Landscape</option>
+                            <option value="auto">Auto (Match images)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option">
+                        <label for="pdf-margin">Page Margin (mm):</label>
+                        <input type="number" id="pdf-margin" min="0" max="50" value="10">
+                    </div>
+                    
+                    <div class="option">
+                        <label for="pdf-quality">Quality:</label>
+                        <select id="pdf-quality">
+                            <option value="high">High (Best quality)</option>
+                            <option value="medium" selected>Medium (Balanced)</option>
+                            <option value="low">Low (Smaller file)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="btn primary-btn convert-btn" id="convert-to-pdf">Convert to PDF</button>
+                
+                <div class="preview-container" id="pdf-preview-container">
+                    <h3>Selected Images</h3>
+                    <div class="preview-images" id="pdf-preview-images"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF to JPG Modal -->
+    <div class="modal" id="pdf-to-jpg-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>PDF to JPG Converter</h2>
+            <p>Extract pages from PDF files as high-quality JPG images</p>
+            
+            <div class="converter-container">
+                <div class="upload-area" id="pdf-to-jpg-upload">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Drag & Drop Your PDF Here</h3>
+                    <p>or click to browse files</p>
+                    <input type="file" id="pdf-to-jpg-input" accept=".pdf">
+                </div>
+                
+                <div class="options-container">
+                    <div class="option">
+                        <label for="jpg-quality">Image Quality:</label>
+                        <select id="jpg-quality">
+                            <option value="100">High (100%)</option>
+                            <option value="85" selected>Medium (85%)</option>
+                            <option value="70">Low (70%)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option">
+                        <label for="jpg-format">Output Format:</label>
+                        <select id="jpg-format">
+                            <option value="jpg" selected>JPG</option>
+                            <option value="png">PNG</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option">
+                        <label for="jpg-pages">Pages to Convert:</label>
+                        <select id="jpg-pages">
+                            <option value="all">All Pages</option>
+                            <option value="range">Page Range</option>
+                            <option value="selection">Page Selection</option>
+                        </select>
+                        <div class="page-range-input" id="jpg-page-range" style="display: none;">
+                            <input type="number" id="jpg-page-start" min="1" value="1" placeholder="From">
+                            <span>to</span>
+                            <input type="number" id="jpg-page-end" min="1" value="1" placeholder="To">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn primary-btn convert-btn" id="convert-to-jpg">Convert to JPG</button>
+                
+                <div class="preview-container" id="jpg-preview-container">
+                    <h3>PDF Information</h3>
+                    <div class="pdf-info" id="pdf-info-display"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Compressor Modal -->
+    <div class="modal" id="image-compressor-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Image Compressor</h2>
+            <p>Reduce image file size with minimal quality loss</p>
+            
+            <div class="converter-container">
+                <div class="upload-area" id="image-compressor-upload">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Drag & Drop Your Images Here</h3>
+                    <p>or click to browse files</p>
+                    <input type="file" id="image-compressor-input" accept="image/*" multiple>
+                </div>
+                
+                <div class="options-container">
+                    <div class="option">
+                        <label for="compression-level">Compression Level:</label>
+                        <input type="range" id="compression-level" min="0" max="100" value="70">
+                        <div class="range-labels">
+                            <span>Small File</span>
+                            <span>Balanced</span>
+                            <span>Best Quality</span>
+                        </div>
+                    </div>
+                    
+                    <div class="option">
+                        <label for="output-format">Output Format:</label>
+                        <select id="output-format">
+                            <option value="original">Original Format</option>
+                            <option value="jpg">JPG</option>
+                            <option value="png">PNG</option>
+                            <option value="webp">WebP</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option">
+                        <label for="max-width">Max Width (px):</label>
+                        <input type="number" id="max-width" placeholder="Original width">
+                    </div>
+                </div>
+                
+                <button class="btn primary-btn convert-btn" id="compress-images">Compress Images</button>
+                
+                <div class="preview-container" id="compressor-preview-container">
+                    <h3>Selected Images</h3>
+                    <div class="preview-images" id="compressor-preview-images"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
